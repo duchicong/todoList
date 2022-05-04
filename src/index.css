@@ -1,13 +1,168 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, 'Source Sans Pro',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #000;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.wrapper-center {
+  margin: 0 auto;
+  width: auto;
+  display: block;
+  max-width: 500px;
+  min-width: 250px;
+}
+
+.wrapper-body {
+  text-align: center;
+}
+
+.new-task.wrapper-new-task {
+  border: 1px solid #000;
+  padding: 40px;
+}
+
+.Text {
+  width: 90px;
+  height: 80px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1px;
+  padding: 5px;
+  margin: 0px auto;
+}
+
+.TextInput {
+  width: 100%;
+  height: 32px;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.Label {
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  margin-top: 20px;
+  height: 25px;
+}
+
+.TextArea {
+  max-width: 419px;
+  display: block;
+  width: 100%;
+  height: 125px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+  padding: 5px;
+  line-height: 12px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.DateInput {
+  height: 31px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}  
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+/************************** NEW TASK ****************************/
+.new-task .space-top {
+  margin-top: 3rem;
+}
+
+.form-input {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.has-error {
+  margin: 2px 0px;
+  font-size: 12px;
+  color: #f00;
+  position: absolute;
+}
+
+/************************** NEW TASK ****************************/
+.update-task {
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-top: none;
+  padding: 40px;
+}
+
+.update-task .space-top {
+  margin-top: 3rem;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 420px) {
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .push-center-xs {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 421px) {
+  .push-right-lg {
+    display: flex;
+    justify-content: flex-end;
+  }  
 }

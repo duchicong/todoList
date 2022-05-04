@@ -1,0 +1,38 @@
+.btn {
+	height: 27px;
+	min-width: 79px;
+	color: #FFFFFF;
+	font-size: 12px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+	background-color: #2196F3;
+}
+
+.btn-success {
+	background-color: #5CB85C;
+}
+
+.btn-danger {
+	background-color: #D9534F;
+}
+
+.btn-info {
+	background-color: #00BCD4;
+}
+
+.btn-block {
+	width: 100%;
+	display: block;
+}

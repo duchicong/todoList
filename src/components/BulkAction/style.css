@@ -1,0 +1,19 @@
+.bulk-action {
+    margin: 10px 0px;
+}
+
+.bulk-action {
+    border: 1px solid #000;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #E0E0E0;
+}
+
+.bulk-action .btn {
+    margin-left: 10px;
+}
+
+.bulk-action p {
+    margin: 0;
+    line-height: 27px;
+}

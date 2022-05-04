@@ -1,0 +1,13 @@
+.todo-list.todo-wrapper {
+    margin: 10px 0px;
+}
+
+.todo-list .todo-item {
+    border: 1px solid #000;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.todo-list .todo-item .btn {
+    margin-left: 10px;
+}
